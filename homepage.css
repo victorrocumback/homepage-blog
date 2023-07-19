@@ -1,0 +1,148 @@
+/* CABEÇALHO */
+
+.cabecalho {
+    background-image: var(--linear);
+    padding: 30px 360px;
+}
+
+.titles-box {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    color: var(--white);
+    font-family: fonte2;
+    font-size: .7em;
+}
+
+#search-bar {
+    width: 100%;
+    height: 40px;
+    padding: 25px 50px;
+    margin-top: 60px;
+
+    border: none;
+    border-radius: 4px;
+    background-color: rgba(255, 255, 255, 0.26);
+
+    background-image: url(search.png);
+    background-repeat: no-repeat;
+    background-size: 28px;
+    background-position-y: 10px;
+    background-position-x: 10px;
+}
+
+#search-bar::placeholder {
+    color: rgba(255, 255, 255, 0.616);
+}
+
+
+/* CONTEUDO */
+
+
+body {
+    background-color: rgb(243, 243, 243);
+}
+
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 50px;
+
+    padding: 80px 360px;
+}
+
+.card {
+    height: auto;
+    width: 100%;
+    padding: 20px;
+
+    color: var(--text);
+    background-color: var(--white);
+    border-radius: 5px;
+    box-shadow: rgba(17, 17, 26, 0.05) 0px 1px 0px, rgba(17, 17, 26, 0.1) 0px 0px 8px;
+}
+
+.card__date {
+    display: flex;
+    justify-content: space-between;
+
+    font-size: .7em;
+    font-family: fonte1;
+    margin-bottom: 18px;
+}
+
+.card__title {
+    font-family: fonte3;
+    font-size: 1.5em;
+    color: var(--title);
+    
+    margin-bottom: 10px;
+}
+
+.card__description {
+    font-family: fonte2;
+    font-size: .8em;
+    line-height: 2em;
+}
+
+
+/* MEDIA QUERIES */
+
+@media screen and (max-width: 480px) {
+    .cabecalho {
+        padding: 40px 25px;
+    }
+
+    .container {
+        padding: 40px 25px;
+        gap: 30px;
+    }
+
+    /* TEXTOS */
+
+    .card__title {
+        font-size: 1.2em
+    }
+
+}
+
+@media screen and (min-width: 481px) and (max-width: 768px) {
+    .cabecalho{
+        padding: 40px 45px;
+    }
+    
+    .container {
+        padding: 40px 45px;
+        gap: 35px;
+    }
+
+    /* TEXTOS */
+
+    .card__title {
+        font-size: 1.4em
+    }
+}
+
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+    .cabecalho{
+        padding: 35px 100px;
+    }
+    
+    .container {
+        padding: 55px 100px;
+        gap: 40px;
+    }
+}
+
+@media screen and (min-width: 1025px) and (max-width: 1280px) {
+    .cabecalho{
+        padding: 30px 150px;
+    }
+    
+    .container {
+        padding: 55px 150px;
+        gap: 40px;
+    }
+}

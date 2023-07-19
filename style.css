@@ -1,0 +1,33 @@
+@import url('homepage.css');
+
+@font-face {
+    font-family: fonte1;
+    src: url(fontes/Inter-Medium.ttf);
+}
+
+@font-face {
+    font-family: fonte2;
+    src: url(fontes/Inter-Regular.ttf);
+}
+
+@font-face {
+    font-family: fonte3;
+    src: url(fontes/LexendDeca-Regular.ttf);
+}
+
+* {
+    box-sizing: boder-box;
+    padding: 0;
+    margin: 0;
+}
+
+:root {
+    --blue: #3EA1DB;
+    --blue-dark: #574AE8;
+    --white: #FFF;
+  
+    --title: #313131;
+    --text: #B6B6B6;
+    
+    --linear: linear-gradient(90deg, #574AE8 0%, #3EA1DB 100%);
+  }
