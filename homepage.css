@@ -36,6 +36,10 @@
     color: rgba(255, 255, 255, 0.616);
 }
 
+#search-bar:focus {
+    outline: none;
+}
+
 
 /* CONTEUDO */
 
